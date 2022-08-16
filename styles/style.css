@@ -1,119 +1,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
-
-
+*{
+    box-sizing: border-box;
+}
+/* FONTS FOR WHOLE PAGE */
 html, body{
     font-family:'Roboto-Regular', serif;
     font-size: 16px;
     font-weight: 400;
     margin: 0;
 }
-
-.header {
-    background-color: #EEEFF1;
-}
-.nav .menu {
-    width:1100px;
-    margin: 0 auto;
-    padding: 50px 50px;
-    
-}
-.menu__item {
-    display: inline-block;
-    text-transform: uppercase;
-    margin-right:100px;
-    text-align: center;
-    
-}
-.menu__item > .link__item{
-    text-decoration: none;
-    color: #000000;
-    letter-spacing: 2px;
-}
-.menu__item > .link__item:link { color: #000000;} 
-.menu__item > .link__item:hover { color: #34547A;}  
-.menu__item > .link__item:active{  color: #34547A;}
-
-.design {
-    background-color: #EEEFF1;
-    width: 100vw;
-}
-
-.wrapper    {
+/* CONTAINER */
+.fix-size-container{
     width: 1100px;
     margin: 0 auto;
 }
+/* HEADER */
+.header {
+    background-color: #EEEFF1;
+    padding-top: 80px;
+}
+/* ALL ELEMENTS THAT ARE INLINE-BLOCK */
+.menu__item , .card , .project__text{
+    display: inline-block;
+}
+/* HEADER LINKS */
+.link__item {
+    font-family: 'Roboto' , Arial , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase; 
+}
+/* ADDING MARGIN TO LINKS */
+.header .margin ~ .menu__item{
+    margin-left: 48px;
+}
+/* EFFECTS FOR LINKS */
+.menu__item > .link__item:link {color: #000000;} 
+.menu__item > .link__item:hover {color: #34547A;}  
+.menu__item > .link__item:active{color: #34547A;}
+
+/* FIRST SECTION DESIGN */
+.design {
+    background-color: #EEEFF1;
+    padding: 164px 0 144px 0;
+    
+}
+/* HEADING  OF FIRST SECTION DESIGN */
 .heading_design{
-    text-align: center;
-    margin: 0 auto;
+    font-family: 'Roboto';
     font-size: 48px;
-    font-weight: 600;
-    padding: 50px 0 50px 0;
+    line-height: 79px;
+    margin-bottom: 60px;
 }
+/* PARAGRAPHS */
 .text {
-    padding: 60px 0 70px 0;
-    line-height: 26.25px
+    line-height: 26px;
+    margin-bottom: 65px;
+    font-weight: 400;
 }
+/* BUTTON "SEND MESSEGE"*/
 .button_link{
-   
     display: inline-block;
     background: #34547A;
     color: #fff;
     padding: 18px;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 26.25px;
+    text-align: center;
+    line-height: 26px;
     letter-spacing: 2px;
+    width: 225px;
+    height: 65px;
   }
 
-
+/* SECOND SECTION ABOUT */
 .about{
     text-align: center;
     background-color: #FFFFFF;
-    padding-top: 120px;
+    padding:112px 0 100px 0;
+    
 }
-.headings{
-    font-size: 32px;
-    line-height: 37.5px;
-    font-weight: 600;
+.title_about , .title_work{
+font-size: 32px;
+font-weight: 500;
+line-height: 38px;
+margin-bottom: 50px;
 }
+
+/* THIRD SECTION PROJECTS */
 .projects{
     background-color: #34547A;
+    padding: 100px 0;
     margin: 0 auto;
-    height: 175px;
-    padding: 120px 0 0 0;
- 
-}
-.projects > .project__item {
-    display: inline-block;
-    margin: 0 30px 0 30px;
+    color: #fff;
 }
 
-.work{
+/* RIGTH MARGIN BEETWEEN OUTSIDE AND INSIDE BLOCKS */
+.card img {
+    margin-right: 20px;
+}
+/* MARGINS WITHOUT FIRST DIV */
+.projects .margin ~ .card{
+ margin-left: 50px;
+}
+.project__text .number{
+font-size: 21px;
+font-weight: 500;
+line-height: 25px;
+margin-bottom: 10px;
+}
+
+.work {
+    background: #EEEFF1;
+    margin: 0 auto;
+    padding: 100px 0;
     text-align: center;
-    background-color: #EEEFF1;
-    padding-top: 120px;
 }
-
-.iframe{
-    padding-bottom: 70px;
-}
-
 .footer {
-    background-color: #34547A;
-    height:70px;
-    color:#FFFFFF; 
+    background: #34547A;
+    padding: 50px 0;
+    color: #fff;
 }
 .creator {
-    padding-top: 15px;
-    line-height: 24.61px;
-    padding-bottom: 4px;
+font-family: Roboto;
+font-size: 21px;
+font-weight: 500;
+line-height: 25px;
+margin-bottom: 20px;
 }
-
-
-
-
-
-
 
 
 
