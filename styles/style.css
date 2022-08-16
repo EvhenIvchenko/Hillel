@@ -113,18 +113,20 @@ font-weight: 500;
 line-height: 25px;
 margin-bottom: 10px;
 }
-
+/* SECTION FOUR WORK */
 .work {
     background: #EEEFF1;
     margin: 0 auto;
     padding: 100px 0;
     text-align: center;
 }
+/* FOOTER */
 .footer {
     background: #34547A;
     padding: 50px 0;
     color: #fff;
 }
+/* CREATOR IN FOOTER */
 .creator {
 font-family: Roboto;
 font-size: 21px;
