@@ -1,118 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto-Medium" ;
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+}
 *{
     box-sizing: border-box;
 }
-/* FONTS FOR WHOLE PAGE */
-html, body{
-    font-family:'Roboto-Regular', serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
-}
+
 /* CONTAINER */
 .fix-size-container{
     width: 1100px;
     margin: 0 auto;
 }
+
 /* HEADER */
 .header {
+    font-family:'Roboto' , 'Arial' , sans-serif;
     background-color: #EEEFF1;
     padding-top: 80px;
 }
+
 /* ALL ELEMENTS THAT ARE INLINE-BLOCK */
-.menu__item , .card , .project__text{
+.inline-block{
     display: inline-block;
 }
+
 /* HEADER LINKS */
-.link__item {
-    font-family: 'Roboto' , Arial , sans-serif;
-    font-weight: 400;
+.link__item {  
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.1em;
-    text-decoration: none;
     color: #000000;
     text-transform: uppercase; 
+    text-decoration: none;
 }
+
 /* ADDING MARGIN TO LINKS */
 .header .margin ~ .menu__item{
     margin-left: 48px;
 }
-/* EFFECTS FOR LINKS */
-.menu__item > .link__item:link {color: #000000;} 
-.menu__item > .link__item:hover {color: #34547A;}  
-.menu__item > .link__item:active{color: #34547A;}
+
+/* EFFECTS HOVER AND ACTIVE FOR LINKS IN HEADER */
+.link__item:hover {
+    color: #34547A;
+}  
+
+.link__item:active{
+    font-family: 'Roboto-Medium';
+    color: #34547A;
+}
 
 /* FIRST SECTION DESIGN */
 .design {
     background-color: #EEEFF1;
-    padding: 164px 0 144px 0;
-    
+    padding: 164px 0 144px 0; 
 }
+
 /* HEADING  OF FIRST SECTION DESIGN */
-.heading_design{
-    font-family: 'Roboto';
+.title_design{
+    font-family: 'Roboto-Medium';
     font-size: 48px;
     line-height: 79px;
+    color: #000000;
     margin-bottom: 60px;
 }
+
 /* PARAGRAPHS */
 .text {
+    font-family: 'Roboto';
+    font-size: 16px;
     line-height: 26px;
     margin-bottom: 65px;
     font-weight: 400;
 }
+
 /* BUTTON "SEND MESSEGE"*/
 .button_link{
+    width: 225px;
+    height: 65px;
     display: inline-block;
     background: #34547A;
     color: #fff;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 18px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     line-height: 26px;
     letter-spacing: 2px;
-    width: 225px;
-    height: 65px;
-  }
+}
 
 /* SECOND SECTION ABOUT */
 .about{
     text-align: center;
     background-color: #FFFFFF;
     padding:112px 0 100px 0;
-    
 }
-.title_about , .title_work{
-font-size: 32px;
-font-weight: 500;
-line-height: 38px;
-margin-bottom: 50px;
+
+/* TITLE OF SECOND SECTION */
+.title_about{
+    font-family: 'Roboto-Medium';
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 50px;
 }
 
 /* THIRD SECTION PROJECTS */
 .projects{
     background-color: #34547A;
     padding: 100px 0;
-    margin: 0 auto;
     color: #fff;
 }
 
 /* RIGTH MARGIN BEETWEEN OUTSIDE AND INSIDE BLOCKS */
 .card img {
+    width: 50px;
+    height: 50px;
     margin-right: 20px;
 }
+
 /* MARGINS WITHOUT FIRST DIV */
 .projects .margin ~ .card{
- margin-left: 50px;
+    margin-left: 50px;
 }
+
 .project__text .number{
-font-size: 21px;
-font-weight: 500;
-line-height: 25px;
-margin-bottom: 10px;
+    font-family: 'Roboto-Medium';
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 10px;
 }
+
+.project__text .text {
+    font-family: 'Roboto';
+    font-size: 16px; 
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left; 
+}
+
 /* SECTION FOUR WORK */
 .work {
     background: #EEEFF1;
@@ -120,19 +151,42 @@ margin-bottom: 10px;
     padding: 100px 0;
     text-align: center;
 }
+
+/* TITLE FOR FORTH SECTION */
+.title_work{
+    font-family: 'Roboto-Medium';
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 50px;
+}
+
+.work .text{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
 /* FOOTER */
 .footer {
     background: #34547A;
     padding: 50px 0;
     color: #fff;
 }
+
 /* CREATOR IN FOOTER */
 .creator {
-font-family: Roboto;
-font-size: 21px;
-font-weight: 500;
-line-height: 25px;
-margin-bottom: 20px;
+    font-family: 'Roboto-Medium';
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.copyright{
+    font-family: 'Roboto';
+    font-size: 13px;
+    line-height: 21px;
 }
 
 
