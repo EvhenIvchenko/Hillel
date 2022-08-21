@@ -1,0 +1,55 @@
+@font-face {
+    font-family:'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+.clearfix{
+    clear: both;
+    overflow: auto;
+}
+/* CONTAINER */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: #e6e6e6;
+}
+/* BOX */
+.box{
+    width: 200px;
+    height: 200px;
+    background-color:#fc8f8f;
+    text-align: center;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* МОЖЛИВО КАСТИЛЬНО ВИРІВНЮВАТИ ТЕКСТ ПО ВЕРТИКАЛІ ЗАВДЯКИ LINEHEIGHT АЛЕ БЕЗ ФЛЕКСІВ І ПОЗИЦЦІОНУВАННЯ ЦЬОГО НЕ ЗРОБИТИ*/
+.text  {
+    font-family: 'Roboto-Bold';
+    font-size: 64px;
+    line-height: 200px;
+    color:#fff ;
+}
+
+.second .left ~ .box {
+    width: 100px;
+    height: 100px;
+}
+.second .left ~ .box .text{
+    font-family: 'Roboto-Bold';
+    font-size: 36px;
+    line-height: 100px;
+    color:#fff ;
+}
+/* ЗАДАЄМО MARGIN МІЖ БЛОКАМИ */
+.margin ~ .box {
+    margin-left: 15px;
+}
+/* ЧЕРЕЗ ФЛОАТ НЕМОЖЛИВО НОРМАЛЬНО ЗАДАТИ ВІДСТУПИ ПІСЛЯ ЯКОГОСЬ ЕЛЕМЕТУ  ТОМУ ОБНУЛЯЄМО МАРДЖІНИ ТАМ ДЕ ВОНИ НЕ ПОТРІБНІ*/
+.non_margin{
+    margin: 0 0 !important;
+}
