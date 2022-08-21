@@ -21,9 +21,11 @@
     background-color:#fc8f8f;
     text-align: center;
 }
+
 .left{
     float: left;
 }
+
 .right{
     float: right;
 }
@@ -39,6 +41,7 @@
     width: 100px;
     height: 100px;
 }
+
 .second .left ~ .box .text{
     font-family: 'Roboto-Bold';
     font-size: 36px;
