@@ -1,0 +1,68 @@
+/* FOOTER */
+.footer{
+    width: 100vw;
+    background: #ffffff;
+}
+/* КАТЕГОРІЇ БОКСИ*/
+.categories{
+    height: 253px;
+    width: 255px;
+    margin: 60px 0;
+}
+/* ВІДСТУПИ МІЖ БОКСАМ КАТЕГОРІЇ */
+.footer .margin ~ .categories{
+    margin-left: 30px;
+}
+/* ЗАГОЛОВК БОКСІВ КАТЕГОРІЇ */
+.categories .heading{
+    font-family: 'Roboto-Medium';
+    font-size: 16px;
+    line-height: 23px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EFEFEF;
+/* ВІДСТУП МЕНЮ ВІД ЗАГОЛОВКУ */
+}
+.categories_menu{
+    margin-top: 25px;
+}
+/* СТИЛІЗАЦІЯ ПОСИЛАНЬ В КАТЕГОРІЯХ */
+.categories_link{
+    font-family: 'Roboto-Regular';
+    font-size: 12px;
+    line-height: 28px;
+    color:#828282;
+}
+/* НИЖНЫЙ ВЫДСТУП В НАВЫГАЦЫЪ ФУТЕРА */
+.nav_footer{
+    margin: 38px 0;
+}
+/* ВИБИРАЄМО ВСІ ДОЧЕРНІ ЕЛЕМЕНТИ І ЗАДАЄМО ЇМ LINE-HEIGHT ДЛЯ ЦЕНТРУВАННЯ ПО ВЕРТИКАЛЫ */
+.nav_footer > *{
+    line-height: 45px;
+}
+/* СТОВВОРЮЄМО КОНТУР НАВКОЛО КАРТИНОК */
+.border{
+    border: 2px solid #F13C6E;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 3px;
+}
+/* ВІДСТУПИ МІЖ ІКОНКАМИ */
+.nav_footer  .margin ~ .icon{
+    margin-left: 20px;
+}
+/* КІНЕЦЬ СТОРІНКИ */
+.bottom{
+    padding: 25px 0;
+    background: #EFEFEF;
+    font-family: 'Roboto-Regular';
+    font-size: 12px; 
+    line-height: 14px;
+    color: #828282;
+}
+/* ПОСИЛАННЯ СІРИМ КОЛЬОРОМ */
+.bottom a {
+    color: #828282;   
+}

@@ -1,0 +1,100 @@
+/* HEADER - ПО ДЕФОЛТУ ЗАДАЄМО ШРИФТ , ЩОБ В ДЕЯКИХ МІСЦЯХ ЕКОНОМИТИ МІСЦЕ І НЕ ДУБЛЮВАТИ */
+.header{
+    width: 100vw;
+    font-family:'Roboto-Regular';
+    font-size: 14px;
+}
+/* НАВІГАЦІЯ ПО ВСЬОМУ САЙТУ */
+.nav_site{
+    text-align: center;
+    background: #E5E5E5;
+    padding: 17px 0;
+}
+/* ВІДСТУПИ МІЖ ПОСИЛАННЯМИ В NAVIGAITION */
+.nav_site .margin ~ .menu__item{
+    margin-left: 30px;
+}
+/* PADDING В ВІДЦЕНТРОВАНОМУ БЛОЦІ*/
+.middle{
+    padding: 20px 0;
+}
+/* LINE-HEIGHT ДЛЯ ВИРІВНЮВАННЯ ПО ЦЕНТРУ  - КАСТИЛЬ , АЛЕ ЗАРАЗ ЦЕ НАЙКОРОТШИЙ ВАРІАНТ*/
+.middle .box {
+    height: 80px;
+    line-height:80px;
+}
+/* ВІДСАНЬ МІЖ ЛОГОТИПОМ І НАЗВОЮ */
+.logo_text{
+    margin-left: 20px;   
+}
+/* СТИЛІЗАЦІЯ ТЕКСТУ ЛОГОТИПА */
+.logo_link{
+    font-family: 'Roboto-Bold';
+    font-size: 36px;
+    color: #F13C6E;
+}
+/* ЗМІНА РОЗМІРУ ШРИФТА ПОСИЛАННЯ НОМЕРУ ТЕЛЕФОНУ*/
+.number_link{
+    font-size: 16px;
+    margin-right: 40px;
+}
+/* СТИЛІЗАЦІЯ КНОПКИ */
+.button{
+    width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #F13C6E;
+    background: #ffffff;
+}
+/* НАВІГАЦІЯ ПОТОЧНОЇ СТОРІНКИ  А НЕ ВСЬОГО САЙТУ*/
+.nav_page{
+    text-align: center;
+    border-top:1px solid #EFEFEF;
+    padding: 30px 0;
+}
+/* ВІДСТУПИ МІЖ ПОСИЛАНЯМИ В НАВІГАЦІЇ ПОТОЧНОЇ СТОРІНКИ*/
+.nav_page .margin ~ .menu_item{
+    margin-left: 40px;
+}
+/* ЗАДНІЙ ФОН */
+.background{
+   position: relative;
+    width: 100%;
+    height: 604px;
+    background: url(../images/background.png) no-repeat;
+    background-position-x: 50%;
+    color: #ffffff;
+}
+/* ВИРІВНЮВАННЯ КОНТЕНТУ ПО ЦЕНТРУ В БЛОЦІ BACKGROUND */
+.content{
+    height: 219px;
+    width: 308px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* ЗАГОЛОВОК КОНТЕНТУ В БЛОЦІ BACKGROUND */
+.title{
+    font-family: 'Roboto-Bold';
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 50px ;
+}
+/* ТЕКСТ КОНТЕНТУ В БЛОЦІ BACKGROUND */
+.info{
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+/* ПОСИЛАННЯ "ПОДРОБНЕЕ" ЗГІДНО УМОВ ЗАВДАННЯ ЗРОБИВ ЦЕ ССИЛКОЮ ХОЧА КНОПКОЮ БУЛО Б ЛЕГШЕ І МЕНШЕ КОДУ */
+.more_link{
+    display: inline-block;
+    height: 40px;
+    width: 170px;
+    border-radius: 40px;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    padding: 12px 10px 12px 45px;
+    color: #ffffff;
+}
+
+

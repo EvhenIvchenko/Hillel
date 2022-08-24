@@ -1,0 +1,115 @@
+/* ФОН ДЛЯ MAIN */
+.main{
+    width: 100vw;
+    background: #E5E5E5;
+}
+/* ПЕРШИЙ SECTION */
+.first_section{
+    padding-bottom: 100px;
+}
+/* ЗАГОЛОВОК ПЕРШИЙ SECTION */
+.first_section .heading{
+    font-family: 'Roboto-Bold';
+    font-size: 24px;
+    line-height: 28px;
+    padding:80px 0 38px 0 ;
+}
+/* ЗАДАЭМО РОЗМЫР КАРТКОК В ПЕРШОМУ SECTION */
+.first_section .card{
+    height: 363px;
+    width: 255px;
+    text-align: center;
+    background: #FFFFFF;
+}
+/* ЗАДАЄМО ВІДСТУП МІЖ КАРТКАМИ */
+.first_section .margin ~ .card {
+    margin-left: 30px;
+}
+/* ВНУТРІШНІЙ ВІДСТУП КАРТИНКИ ВСЕРЕДИНІ КАРТКИ */
+.first_section .card img{
+    margin: 25px 65px 20px 65px;
+}
+/* ТЕКСТ ВСЕРЕДИНІ КАРТКИ */
+.card_text{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+/* ТЕКСТ ЦІНА В КАРТЦІ */
+.price{
+    font-family: 'Roboto-Medium';
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    margin-bottom:20px;
+}
+/* ПОСИЛАННЯ "КУПИТЬ" */
+.buy_link{
+    display: inline-block;
+    height: 35px;
+    width: 130px;
+    left: 1037px;
+    top: 1303px;
+    border-radius: 30px;
+    background: #F13C6E;
+    padding: 8px;
+    color: #FFFFFF;
+}
+
+/* ДРУГИЙ SECTION */
+.second_section{
+    margin-bottom:100px;
+    color: #FFFFFF;
+}
+/* БОКСИ В ДРУГОМУ SECTION */
+.second_section .box {
+    width: 540px;
+    height: 212px;
+    background:#F13C6E;
+    padding: 35px 45px 35px 40px;
+}
+/* ЗАГОЛОВОК БОКСІВ В ДРУГОМУ SECTION */
+.second_section .heading{
+    font-family: 'Roboto-Bold';
+    font-size: 18px;
+    line-height: 21px;
+}
+/* ТЕКСТ ВСЕРЕДИНІ БОКСІВ */
+.text_box{
+    line-height: 20px;
+    margin: 20px 0;
+}
+/* ІНПУТ ЕМЕЙЛ */
+.email{
+    display: inline-block;
+    height: 35px;
+    width: 225px;
+    border-radius: 30px;
+    border: 0;
+}
+/* КАРТА МАГАЗИНІВ ПОСИЛАННЯ */
+.map_link{
+    display: inline-block;
+    height: 35px;
+    width: 170px;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+    padding: 7px 0 0 25px;
+    color: #FFFFFF;
+}
+/* ТРЕТІЙ SECTION ВЫДСУТП ЗНИЗУ */
+.third_section{
+    margin-bottom: 80px;
+}
+/* КАРТИНКИ ЛОГОТИПИ */
+.impuls_logo{
+    display: inline-block;
+    height: 119px;
+    width: 277px;
+    background: #FFFFFF;
+    padding: 35px 63px 35px 65px;
+    border: 1px solid #EFEFEF
+}
+/* ОБНУЛИЛИ PADDING-TOP HEADING В  ЧЕТВЕРТОМУ SECTIONI ТАК ЯК ВОНО БУЛО СПОПІЙОВАНЕ З ПЕРШОГО SECTION*/
+.fourth_section .heading{
+    padding:0 0 38px 0;
+}

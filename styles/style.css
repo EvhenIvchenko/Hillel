@@ -1,0 +1,53 @@
+@font-face {
+    font-family:'Roboto-Regular' ;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+html , body {
+    overflow-x:hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+/*ОБНУЛЯЄМО СТИЛІ ПОСИЛАНЬ ТОМУ ЩО З ЦИМ НЕ СПРАВИВСЯ RESET */
+a{
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;  
+}
+/* ЗАДАЄМО ВСІМ ЕЛЕМЕНТАМ ЦЬОГО КЛАСЦ ІНЛАЙН БЛОК */
+.inline-block{
+    display: inline-block;
+}
+/* ФЛОАТ ЛЕФТ */
+.left{
+    float: left;
+}
+/* ФЛОАТ РАЙТ */
+.right{
+    float: right;
+}
+/* КЛІРФІК ДЛЯ ВИРІШЕННЯ ПРОБЛЕМИ ФЛОАТІВ */
+.clearfix{
+    clear: both;
+}
+/* ОБМЕЖЕННИЙ КОНТЕЙНЕР ПО РОЗМІРАХ НА  МАКЕТІ ВІН 1110 А НЕ 1100 */
+.fix-size-container{
+    width: 1110px;
+    margin: 0 auto;
+}
