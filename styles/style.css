@@ -16,6 +16,7 @@
 
 html , body {
     overflow-x:hidden;
+    font-family: 'Roboto-Regular';
 }
 
 * {
@@ -27,6 +28,7 @@ a{
     color: #000000;
     cursor: pointer;
 }
+/* ПОІНТЕР ДЛЯ ВСІХ КНОПОК */
 button{
     cursor: pointer;  
 }

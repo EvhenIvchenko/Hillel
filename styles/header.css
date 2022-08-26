@@ -40,6 +40,8 @@
 }
 /* СТИЛІЗАЦІЯ КНОПКИ */
 .button{
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
     width: 170px;
     height: 40px;
     border-radius: 40px;
@@ -66,8 +68,7 @@
     color: #ffffff;
 }
 /* ВИРІВНЮВАННЯ КОНТЕНТУ ПО ЦЕНТРУ В БЛОЦІ BACKGROUND */
-.content{
-    height: 219px;
+.content{ 
     width: 308px;
     position: absolute;
     top: 50%;
