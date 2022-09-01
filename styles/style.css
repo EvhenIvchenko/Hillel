@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ОБНУЛЯЄМО СТИЛІ ПОСИЛАНЬ */
+.menu a{
+    text-decoration: none;
+    color:#ffffff;
+    display: block;
+}
+
+/* ФІКСИМО ПРОБЛЕМУ ФЛОТІВ */
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ОБГОРТКА */
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* ГОЛОВНЕ МЕНЮ */
+.menu{
+    background: #333333;
+    border-bottom: #009eff  6px solid;
+    text-align: center;
+}
+
+/* ЕЛЕМЕНТИ ГОЛОВНОГО МЕНЮ */
+.menu_item{
+    float:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; 
+    width: 160px;
+    height: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* ВІДСТУПИ МІЖ ЕЛЕМЕНТАМИ ГОЛОВНОГО МЕНЮ */
+.margin ~ .menu_item{
+    margin-left: 30px;
+}
+
+/* ЕФЕКТ ПРИ НАВЕДЕННІ НА ЕЛЕМЕНТ ГОЛОВНОГО МЕНЮ */
+.menu_item:hover {
+    background: #009eff;
+}
+
+/* ПРИ НАВЕДЕННІ ДОДАМО ЕЛЕМНЕНТ "+ " ДО ЕЛЛЕМЕНТА ГОЛОВНОГО МЕНЮ*/
+.menu_item:hover::after{
+    content: "+";
+    color: #ffffff;
+    top: 0px;
+    right:10px;
+    position: absolute;
+}
+
+/* ХОВАЄМО ПЕРШЕ ПІДМЕНЮ */
+.drop_menu{
+    display: none;
+    background: #009eff; 
+    padding-top: 8px;
+    text-align: left;
+    position: absolute;
+}
+/* ЕЛЕМЕНТ ПЕРШОГО ПІДМЕНЮ*/
+.drop_item{
+    border: 1px solid #0084ef;
+    width: 320px;
+    padding-left: 14px;
+    position: relative;
+}
+
+/* ПРИ НАВЕДЕННІ ПОКАЗУЄМО ПЕРШЕ МЕНЮ */
+.menu_item:hover  .drop_menu{
+    display: block;
+}
+
+/* ПРИ НАВЕДЕННІ ДОДАМО ЕЛЕМНЕНТ "+ " ДО ЕЛЛЕМЕНТА ПЕРШОГО  ПІДМЕНЮ*/
+.drop_item:hover::after{
+    content: "+";
+    color: #ffffff;
+    top: 0px;
+    right: 20px;
+    position: absolute;
+}
+
+/* ХОВАЄМО ДРУГЕ МЕНЮ */
+.second_drop_menu{
+    display: none;
+    background: #009eff; 
+    position: absolute;
+    left: 319px;;
+    top: -1px;
+}
+
+/* РОБИМО ВИДИМИ ДРУГЕ МЕНЮ ПРИ НАВЕДЕННІ */
+.drop_item:hover .second_drop_menu {
+    display: block;
+}
+
+/* ЕЛЕМЕНТ ДРУГОГО ПІДМЕНЮ */
+.second_drop_item{
+    border: 1px solid #0084ef;
+    width:320px;
+    padding-left: 14px;
+}
