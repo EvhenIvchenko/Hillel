@@ -1,0 +1,256 @@
+@import url(../styles/_fonts.css);
+*{
+    box-sizing: border-box;
+}
+/* RESET LINK STYLES */
+a{
+    text-decoration: none;
+    color: #000;
+    
+}
+/* FONT FOR WHOLE PAGE */
+body{
+    font-family: 'GraphikLCG-Regular';
+}
+/*FIX SIZE CONTAINER */
+.fix-size-container{
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+/* HEADER */
+.header{
+    padding: 25px 0;
+    border-bottom: 1px solid #E5E5E5;;
+}
+/* NAVIGATION */
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* MENU */
+.menu{
+    display: flex;
+    flex-grow: 1;
+    margin-left: 50px;
+    gap:50px;
+    font-size: 15px;
+}
+/* BLOCK LOGIN */
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+/* LINK LOGIN AND TRY IT LINK */
+.button{
+    font-family: 'GraphikLCG-Semibold';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 45px;
+    border: 1px solid #00000080;
+}
+/* LINK TRY IT */
+.red{
+    background-color: #FF6336;
+    color: #FFF;
+    border:none;
+}
+/* FIRST SECTION */
+.first_section{
+    padding:115px 0 172px;
+    background: url(../images/first_section.png) no-repeat;
+    background-position-x: 100%;
+    background-position-y: 44%;
+}
+/* TITLE OF FIRST SECTION */
+.first_title{
+    font-family: Graphik LC TT;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 552px;
+}
+/* TEXT OF FIRST SECTION*/
+.first_text{
+    width: 471px;
+    font-size: 25px;
+    line-height: 35px;
+    margin: 50px 0;
+}
+/* LINKS BUTTONTS IN FIRST SECTION */
+.first_section .link{
+    width: 160px;
+    height: 60px;
+}
+/* LINK FREE TRIAL */
+.trial_link{
+    display: inline-block;
+    margin-top:24px;
+    font-size: 15px;
+}
+/* SEOND SECTION */
+.second_section{
+    background: #FF9C7D ;
+    padding: 108px 0 94px;
+}
+/* SECOND SECTION TITLE */
+.second_title{
+    font-family: 'GraphikLCG-Semibold';
+    font-size: 50px;
+    line-height: 60px;
+    width: 720px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    text-align: center;
+}
+/* ICONS IN SECOND SECTION */
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0 20px;
+}
+/* WRAPPER FOR SHORT SECTIONS */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+    padding: 90px 0 150px 0;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+/* REPLACE CONTENT AND IMAGE IN EVEN SECTIONS */
+.wrapper .section:nth-child(2n) .content{
+    order: 2;
+}
+
+/* FLEX FOR WHOLE SECTION */
+.section{
+    display: flex;
+
+}
+/* BLOCK CONTENT */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* TITLE IN SECTIONS */
+.title{
+    font-family: 'GraphikLCG-Semibold';
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0em;
+}
+/* TEXT IN SECTIONS */
+.text{
+    font-family: 'GraphikLCG-Regular';
+    font-size: 20px;
+    line-height: 30px;
+}
+/* LINKS IN SECTIONS */
+.link{
+    font-family: 'GraphikLCG-Semibold';
+    font-size: 20px;
+    line-height: 30px;
+}
+/* THIRD SECTION GAP */
+.third__section{
+    gap: 165px;
+}
+/* THIRD SECTION TITLE */
+.third__section-title{
+    margin-bottom: 30px;
+    Width:493px;
+}
+/* THIRD SECTION TEXT */
+.third__section-text{
+    margin-bottom: 30px;
+    Width:491px;
+}
+
+.fourth__section{
+    gap: 138px;
+}
+
+.fourth__section-title {
+    margin-bottom: 25px;
+    width: 379px;
+}
+
+.fourth__section-text{
+    margin-bottom:35px;
+    width: 450px;
+}
+
+.fifth__section{
+    gap: 138px;
+}
+
+.fifth__section-title{
+    margin-bottom: 30px;
+    width: 397px;
+}
+
+.fifth__section-text{
+    margin-bottom: 35px;
+    width: 520px;
+}
+
+.sixth__section{
+    gap: 138px;
+}
+
+.sixth__section-title{
+    margin-bottom: 25px;
+    width: 348px;
+}
+
+.sixth__section-text{
+    margin-bottom: 35px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.seventh__section{
+    padding: 120px 0 150px 0;
+    background: #FFF8E4;
+}
+
+.seventh__section-title{
+    font-family: 'GraphikLCG-Semibold';
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.seventh__section-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+.card{
+    width: 330px;
+    height: 294px;
+   display: flex;
+   flex-direction: column;
+   gap: 23px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.card__image{
+    width: 160px;
+    height: 120px;
+}
+
