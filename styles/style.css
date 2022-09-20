@@ -6,7 +6,6 @@
 a{
     text-decoration: none;
     color: #000;
-    
 }
 /* FONT FOR WHOLE PAGE */
 body{
@@ -18,7 +17,6 @@ body{
     max-width: 1290px;
     margin: 0 auto;
 }
-
 /* NAVIGATION */
 .nav{
     display: flex;
@@ -75,7 +73,6 @@ body{
     background-position-x: 100%;
     background-position-y: 48%;
 }
-
 /* TITLE OF FIRST SECTION */
 .header__content-title{
     font-family: 'GraphikLCG-Semibold';
@@ -92,7 +89,6 @@ body{
     line-height: 35px;
     margin: 50px 0;
 }
-
 /* LINK FREE TRIAL */
 .trial_link{
     display: inline-block;
@@ -134,11 +130,9 @@ body{
 .wrapper .section:nth-child(2n) .content{
     order: 2;
 }
-
 /* FLEX FOR WHOLE SECTION */
 .section{
     display: flex;
-
 }
 /* BLOCK CONTENT */
 .content{
